@@ -1,0 +1,280 @@
+body {
+		font-family: 'Roboto', 'Arial', sans-serif;
+		margin: 0;
+		background-color: #ededf0;
+}
+
+.center-container {
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+		flex-direction: column;
+		max-width: 600px;
+		margin: 0 auto;
+}
+
+#index > img {
+		width: 200px;
+		margin: 0 auto;
+}
+
+#index nav {
+		margin-top: 100px;
+		display: flex;
+		justify-content: space-around;
+}
+
+#index nav a {
+		width: 45%;
+		display: inline-block;
+		background-color: #fff;
+		box-shadow: 0 1px 4px rgba(12, 12, 13, 0.15);
+		border-radius: 10px;
+		overflow: hidden;
+		text-decoration: none;
+		color: #0f1126;
+		padding-bottom: 40px;
+		transition: 300ms;
+}
+
+#index nav a:hover {
+		box-shadow: 0 4px 16px rgba(12, 12, 13, 0.1);
+}
+
+#index nav a .img {
+		display: block;
+		width: 100%;
+		height: 150px;
+		background-position: center;
+		background-size: cover;
+}
+
+#index nav a .img.form {
+		background-image: url("/img/form.png");
+}
+
+#index nav a .img.rayon {
+		background-image: url("/img/rayon.png");
+}
+
+#index nav a h2 {
+		padding: 0 30px;
+		font-weight: 900;
+		margin: 20px 0 0 0;
+		font-size: 18px;
+		opacity: .8;
+}
+
+#index nav a p {
+		padding: 0 30px;
+		margin: 25px 0 0 0;
+}
+
+#form-feature {
+		color: #0f1126;
+		font-weight: 300;
+}
+
+#form-feature > div {
+		max-width: 960px;
+		margin: 0 auto;
+}
+
+#form-feature .logo {
+		width: 100px;
+		margin: 0 auto;
+}
+
+#form-feature .form {
+		font-size: 40px;
+		line-height: 2;
+		text-align: center;
+}
+
+#form-feature .form span, #form-feature .form input {
+		font-weight: 300;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 40px;
+		border: 0px;
+		background-color: transparent;
+		color: #A9054A;
+		cursor: pointer;
+		padding: 10px 0;
+		box-shadow: 0 0px currentColor;
+}
+
+#form-feature .form span:hover {
+		box-shadow: 0 2px;
+}
+
+#form-feature .form input {
+		width: 80px;
+		cursor: inherit;
+}
+
+#form-feature .form input:focus {
+		box-shadow: 0 2px;
+}
+
+#form-feature .form button {
+		cursor: pointer;
+		background-color: #A9054A;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		border: 1px solid #A9054A;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 700;
+		font-family: 'Roboto', Arial, sans-serif;
+		transition: .2s;
+}
+
+#form-feature .form button:hover {
+		color: #A9054A;
+		background-color: transparent;
+}
+
+#result > div {
+		max-width: inherit;
+		align-items: center;
+		background-color: #A9054A;
+}
+
+#result > div h1 {
+		font-weight: 300;
+		font-size: 30px;
+		color: #fff;
+}
+
+#result > div img {
+		max-width: 960px;
+		filter: drop-shadow(0 4px 16px rgba(12, 12, 13, 0.15));
+		padding: 30px;
+}
+
+#result > div p {
+		max-width: 600px;
+		color: #fff;
+}
+
+#result > div .buttons button, #result > div .buttons a {
+		cursor: pointer;
+		text-decoration: none;
+		background-color: #fff;
+		color: #A9054A;
+		padding: 10px 20px;
+		border-radius: 5px;
+		border: 1px solid #fff;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 700;
+		font-family: 'Roboto', Arial, sans-serif;
+		transition: .2s;
+}
+
+#result > div .buttons button:hover, #result > div .buttons a:hover {
+		color: #fff;
+		background-color: transparent;
+}
+
+#result > div .buttons button.minimal, #result > div .buttons a.minimal {
+		color: #fff;
+		border-color: transparent;
+		background-color: transparent;
+}
+
+#rayon .center-container {
+		max-width: 100%;
+}
+
+#rayon .center-container svg {
+		transform: translateY(100px);
+}
+
+#rayon .center-container #form {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 40%;
+		margin: 0 auto;
+		transform: translateY(-100px);
+}
+
+#rayon .center-container #form .icon {
+		float: left;
+		width: calc(100% / 8);
+		margin: 10px 5px;
+		cursor: pointer;
+		border-radius: 5px;
+}
+
+#rayon .center-container #form .icon img {
+		width: 100%;
+}
+
+#rayon .center-container #form .icon h2 {
+		text-align: center;
+		font-size: 15px;
+		font-weight: 400;
+}
+
+#rayon .center-container #form .icon:hover {
+		background-color: rgba(15, 17, 38, 0.15);
+}
+
+#rayon .center-container #form .icon.active {
+		background-color: rgba(169, 5, 74, 0.2);
+		position: relative;
+}
+
+#rayon .center-container #form .icon.active:hover {
+		background-color: rgba(169, 5, 74, 0.3);
+}
+
+#rayon .center-container #form .icon.active::before {
+		content: '';
+		top: 35%;
+		left: 0;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background-color: #A9054A;
+		transform: rotateZ(45deg);
+}
+
+#rayon .center-container #form .icon.active::after {
+		content: '';
+		top: 35%;
+		left: 0;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background-color: #A9054A;
+		transform: rotateZ(-45deg);
+}
+
+#rayon .center-container #form button {
+		margin-top: 20px;
+		cursor: pointer;
+		background-color: #A9054A;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		border: 1px solid #A9054A;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 700;
+		font-family: 'Roboto', Arial, sans-serif;
+		transition: .2s;
+}
+
+#rayon .center-container #form button:hover {
+		color: #A9054A;
+		background-color: transparent;
+}
+
+#rayon .center-container #form button.useless {
+		opacity: .5;
+		pointer-events: none;
+}
